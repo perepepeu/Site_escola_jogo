@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Jogo de Ludo</title>
+    <link rel="stylesheet" href="ludo.css"> <!-- Ajuste o caminho conforme necessário -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o logo, navegação e login/status de usuário -->
+    <header>
+        <div class="header-container">
+            <img src="../../../../logo.png" alt="Logo" class="logo">
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a id="inicioLink" href="#">Início</a></li>
+                    <li><a id="contatoLink" href="#">Entre em Contato</a></li>
+                    <li><a id="categoriaLink" href="#">Categoria</a></li>
+                    <li><a id="quemSomosLink" href="#">Quem Somos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Área de login e status do usuário -->
+            <div id="loginStatus">
+                <span id="usernameDisplay" class="user-name" onclick="toggleMenu()">Usuário</span>
+                <a href="../login/login.html" id="loginButton" style="display: none;">Fazer login</a>
+                <div id="userMenu" class="dropdown-menu">
+                    <a href="#" id="editAccount">Editar Conta</a>
+                    <a href="#" id="logoutButton">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Regras do Jogo de Ludo</h1>
+        <p>Ludo é um jogo de tabuleiro clássico para 2 a 4 jogadores, onde o objetivo é levar todas as suas peças do início ao final no tabuleiro antes dos adversários. Abaixo estão as regras e movimentos básicos do jogo de Ludo.</p>
+
+        <!-- Tabuleiro Completo -->
+        <section>
+            <h2>O Tabuleiro</h2>
+            <p>O tabuleiro de Ludo é dividido em quatro áreas de cores diferentes para cada jogador, com trajetos que levam do início até o ponto central. Cada jogador possui quatro peças que devem percorrer o tabuleiro até chegar ao final.</p>
+            <figure>
+                <img src="image1.png" alt="Tabuleiro completo de Ludo">
+                <figcaption>Figura 1: Tabuleiro de Ludo e a posição inicial das peças.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Movimentos das Peças -->
+        <section>
+            <h2>Movimento das Peças</h2>
+            <p>As peças de Ludo se movem conforme o número sorteado no dado, seguindo o caminho designado no tabuleiro até o ponto final. As peças podem capturar peças adversárias ao pousarem na mesma casa, enviando-as de volta ao início.</p>
+
+            <figure>
+                <img src="image2.png" alt="Peças de Ludo e seus movimentos">
+                <figcaption>Figura 2: As peças de Ludo em movimento no tabuleiro.</figcaption>
+            </figure>
+
+            <ul>
+                <li><strong>Movimento inicial:</strong> Para sair do ponto inicial, o jogador deve tirar um 6 no dado. Cada vez que tirar um 6, pode jogar novamente.</li>
+                <li><strong>Captura:</strong> Se uma peça pousar na mesma casa que uma peça adversária, esta é capturada e volta ao início do trajeto.</li>
+                <li><strong>Chegada ao final:</strong> Ao completar o trajeto, a peça entra na área final, onde não pode mais ser capturada.</li>
+            </ul>
+        </section>
+
+        <!-- Objetivo do Jogo -->
+        <section>
+            <h2>Objetivo do Jogo</h2>
+            <p>O objetivo do jogo de Ludo é levar todas as suas quatro peças do ponto inicial até o centro do tabuleiro, antes que os outros jogadores consigam fazer o mesmo. O primeiro a completar o trajeto com todas as peças é o vencedor.</p>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="ludo.js"></script> 
+    <script src="../../../../auth.js"></script>
+
+</body>
+</html>

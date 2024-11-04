@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias de Jogos de Tabuleiro</title>
+    <link rel="stylesheet" href="category.css"> <!-- Ajuste o caminho conforme necessário -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o logo, navegação e login/status de usuário -->
+    <header>
+        <div class="header-container">
+            <img src="../../logo.png" alt="Logo" class="logo">
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a id="inicioLink" href="#">Início</a></li>
+                    <li><a id="contatoLink" href="#">Entre em Contato</a></li>
+                    <li><a id="categoriaLink" href="#">Categoria</a></li>
+                    <li><a id="quemSomosLink" href="#">Quem Somos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Área de login e status do usuário -->
+            <div id="loginStatus">
+                <span id="usernameDisplay" class="user-name" onclick="toggleMenu()">Usuário</span>
+                <a href="../login/login.html" id="loginButton" style="display: none;">Fazer login</a>
+                <div id="userMenu" class="dropdown-menu">
+                    <a href="#" id="editAccount">Editar Conta</a>
+                    <a href="#" id="logoutButton">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Jogos Clássicos de Tabuleiro</h1>
+        <ul class="game-list">
+            <li>
+                <a href="#monopoly" id="game-monopoly">Monopoly</a>
+                <p class="game-description">Um jogo de negociação onde os jogadores compram e vendem propriedades, tentando levar os outros à falência.</p>
+            </li>
+            <li>
+                <a href="#chess" id="game-chess">Xadrez</a>
+                <p class="game-description">Um jogo de estratégia entre dois jogadores que usam peças de diferentes tipos e valores para capturar o rei do oponente.</p>
+            </li>
+            <li>
+                <a href="#dama" id="game-dama">Dama</a>
+                <p class="game-description">Um jogo de tabuleiro onde dois jogadores movem suas peças diagonalmente para capturar as peças do oponente.</p>
+            </li>
+            <li>
+                <a href="#risk" id="game-risk">Risk</a>
+                <p class="game-description">Um jogo de estratégia onde os jogadores tentam conquistar territórios e eliminar seus oponentes em um mapa global.</p>
+            </li>
+            <li>
+                <a href="#ludo" id="game-ludo">Ludo</a>
+                <p class="game-description">Um jogo de corrida em que os jogadores movem suas peças ao redor do tabuleiro tentando levar todas ao centro antes dos oponentes.</p>
+            </li>
+        </ul>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="category.js"></script>
+    <script src="../../auth.js"></script>
+
+</body>
+</html>

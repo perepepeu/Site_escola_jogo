@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Conta</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ajuste conforme necessário -->
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar Conta</h2>
+        <form id="registerForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Senha:</label>
+            <div class="password-container">
+                <input type="password" id="password" required>
+                <button type="button" id="togglePassword">🙈</button>
+            </div>
+
+            <div id="message"></div>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <button id="loginRedirect">Fazer Login</button>
+    </div>
+    <script src="registrar.js"></script>
+</body>
+</html>

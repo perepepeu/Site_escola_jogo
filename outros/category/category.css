@@ -1,0 +1,133 @@
+    .game-list {
+        list-style-type: none; /* Remove os marcadores da lista */
+        padding: 0; /* Remove o padding padrão */
+        margin: 0; /* Remove a margin padrão */
+    }
+    /* Estilos para os links dos jogos */
+    .game-link {
+        font-size: 18px; /* Tamanho da fonte dos nomes dos jogos */
+        color: #007bff; /* Cor dos links */
+        text-decoration: none; /* Remove sublinhado */
+        margin-bottom: 10px; /* Espaço entre os jogos */
+        display: block; /* Faz o link ocupar toda a largura disponível */
+    }
+
+    .game-link:hover {
+        text-decoration: underline; /* Sublinha ao passar o mouse */
+        cursor: pointer; /* Muda o cursor ao passar sobre o link */
+    }
+
+    /* Estilo para a descrição do jogo */
+    .game-description {
+     margin-bottom: 15px; /* Espaço entre a descrição de um jogo e o próximo jogo */
+    }
+
+    #loginButton {
+        text-decoration: none; /* Remove sublinhado */
+        color: white; /* Cor do link */
+        margin-left: 20px; /* Espaçamento à esquerda */
+    }
+    
+    /* Estilos do corpo e outros elementos */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+    }
+
+    /* Estilos do cabeçalho */
+    header {
+        background-color: #007bff; /* Cor de fundo do cabeçalho */
+        color: white; /* Cor do texto */
+        padding: 10px 20px; /* Espaçamento */
+        position: fixed; /* Mantém o cabeçalho fixo no topo */
+        width: 100%; /* Largura total */
+        top: 0; /* Posiciona no topo */
+        left: 0; /* Alinha à esquerda */
+        z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    }
+
+    /* Contêiner do cabeçalho */
+    .header-container {
+        display: flex; /* Usar flexbox para layout */
+        align-items: center; /* Alinha verticalmente no centro */
+        justify-content: space-between; /* Espaça o conteúdo entre as extremidades */
+        max-width: 1200px; /* Largura máxima do cabeçalho */
+        margin: 0 auto; /* Centraliza o cabeçalho */
+    }
+
+    /* Estilo para o logo */
+    .logo {
+        width: 50px; /* Largura do logo */
+        height: auto; /* Mantém a proporção */
+    }
+
+    /* Estilos da lista de navegação */
+    .nav-list {
+        list-style-type: none; /* Remove marcadores da lista */
+        padding: 0; /* Remove padding padrão */
+        margin: 0; /* Remove margin padrão */
+        display: flex; /* Exibe os itens da lista em linha */
+    }
+
+    /* Estilo para os itens da lista de navegação */
+    .nav-list li {
+        margin: 0 20px; /* Espaçamento entre os itens */
+    }
+
+    /* Estilo para links da navegação */
+    .nav-list a {
+        text-decoration: none; /* Remove sublinhado */
+        color: white; /* Cor dos links */
+        font-weight: bold; /* Destaca o texto dos links */
+    }
+
+    .nav-list a:hover {
+        text-decoration: underline; /* Sublinha ao passar o mouse */
+    }
+
+    /* Estilo para o status de login */
+    #loginStatus {
+        display: flex; /* Usar flexbox para alinhamento */
+        align-items: center; /* Alinha verticalmente no centro */
+    }
+
+    /* Estilo para o nome de usuário */
+    .user-name {
+        cursor: pointer; /* Muda o cursor ao passar sobre o nome */
+        position: relative; /* Para o menu suspenso */
+    }
+
+    /* Estilo para o menu suspenso */
+    .dropdown-menu {
+        display: none; /* Oculta o menu suspenso inicialmente */
+        position: absolute; /* Permite que o menu apareça abaixo do nome de usuário */
+        top: 65%; /* Coloca o menu 5 pixels abaixo do nome de usuário */
+        right: 100px; /* Alinha à direita do nome de usuário */
+        background-color: #f4f4f4; /* Cor de fundo do menu */
+        border: 1px solid #ddd; /* Borda do menu */
+        border-radius: 4px; /* Cantos arredondados */
+        padding: 10px; /* Espaçamento interno */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do menu */
+        z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+        min-width: 150px; /* Largura mínima do menu */
+        max-width: 250px; /* Limita a largura máxima do menu */
+    }
+
+    /* Estilo para os itens do menu */
+    .dropdown-menu a {
+        display:  block;
+        color: #666; /* Cor dos itens do menu */
+        text-decoration: none;
+        padding: 8px 10px; /* Espaçamento interno dos itens */
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+    }
+
+    /* Estilos do main */
+    main {
+        padding: 70px 20px 20px; /* Adiciona espaçamento interno, considerando o cabeçalho fixo */
+        text-align: center; /* Centraliza o texto */
+    }

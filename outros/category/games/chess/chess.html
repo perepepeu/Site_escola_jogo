@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Xadrez</title>
+    <link rel="stylesheet" href="chess.css"> <!-- Ajuste o caminho conforme necessário -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o logo, navegação e login/status de usuário -->
+    <header>
+        <div class="header-container">
+            <img src="../../../../logo.png" alt="Logo" class="logo">
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a id="inicioLink" href="#">Início</a></li>
+                    <li><a id="contatoLink" href="#">Entre em Contato</a></li>
+                    <li><a id="categoriaLink" href="#">Categoria</a></li>
+                    <li><a id="quemSomosLink" href="#">Quem Somos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Área de login e status do usuário -->
+            <div id="loginStatus">
+                <span id="usernameDisplay" class="user-name" onclick="toggleMenu()">Usuário</span>
+                <a href="../login/login.html" id="loginButton" style="display: none;">Fazer login</a>
+                <div id="userMenu" class="dropdown-menu">
+                    <a href="#" id="editAccount">Editar Conta</a>
+                    <a href="#" id="logoutButton">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Regras do Xadrez</h1>
+        <p>O xadrez é um jogo de estratégia que exige concentração e planejamento. Ele é jogado em um tabuleiro de 8x8, e o objetivo é colocar o rei do oponente em xeque-mate, uma posição em que o rei está ameaçado e não pode escapar. Abaixo estão as regras e movimentos das peças.</p>
+        
+        <!-- Tabuleiro Completo -->
+        <section>
+            <h2>O Tabuleiro</h2>
+            <p>O tabuleiro de xadrez é composto por 64 casas, alternando entre cores claras e escuras. Cada jogador começa com 16 peças: 1 rei, 1 rainha, 2 torres, 2 cavalos, 2 bispos e 8 peões.</p>
+            <figure>
+                <img src="image1.png" alt="Tabuleiro de xadrez completo">
+                <figcaption>Figura 1: Tabuleiro completo de xadrez e a posição inicial das peças.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Movimentos das Peças -->
+        <section>
+            <h2>Movimento das Peças</h2>
+            <p>Cada peça no xadrez tem movimentos específicos, que os jogadores utilizam para capturar as peças adversárias e proteger o próprio rei.</p>
+
+            <figure>
+                <img src="image2.png" alt="Peças de xadrez e seus movimentos">
+                <figcaption>Figura 2: As peças do xadrez e seus movimentos característicos.</figcaption>
+            </figure>
+
+            <ul>
+                <li><strong>Rei:</strong> Move-se uma casa em qualquer direção (vertical, horizontal ou diagonal). O rei nunca pode se colocar em xeque.</li>
+                <li><strong>Rainha:</strong> Move-se em qualquer direção e por qualquer número de casas, desde que o caminho esteja livre.</li>
+                <li><strong>Bispo:</strong> Move-se em linhas diagonais, também sem limite de casas, mas somente nas casas da cor em que começou o jogo.</li>
+                <li><strong>Torre:</strong> Move-se em linhas retas (horizontal ou vertical) por qualquer número de casas.</li>
+                <li><strong>Cavalo:</strong> Move-se em um padrão de "L": duas casas em uma direção e uma casa perpendicularmente. É a única peça que pode "pular" sobre outras peças.</li>
+                <li><strong>Peão:</strong> Move-se uma casa para frente, mas captura as peças adversárias em uma diagonal à sua frente. Na primeira jogada, o peão pode avançar duas casas.</li>
+            </ul>
+        </section>
+
+        <!-- Objetivo do Jogo -->
+        <section>
+            <h2>Objetivo do Jogo</h2>
+            <p>O objetivo do xadrez é colocar o rei adversário em uma posição de xeque-mate. Isso ocorre quando o rei está ameaçado e não há movimentos possíveis para protegê-lo ou retirá-lo do xeque.</p>
+            <p>Além disso, o xadrez pode envolver situações de empate, como o afogamento, onde o jogador que deve fazer a próxima jogada não está em xeque mas também não pode mover nenhuma de suas peças.</p>
+        </section>
+
+        <!-- Melhor Jogador de Xadrez do Mundo -->
+        <section>
+            <h2>O Melhor Jogador do Mundo</h2>
+            <p>O xadrez é um jogo altamente competitivo, com jogadores de renome em todo o mundo. Atualmente, o título de melhor jogador de xadrez é disputado por alguns dos maiores mestres, que competem em campeonatos internacionais.</p>
+
+            <figure>
+                <img src="image3.png" alt="Melhor jogador de xadrez do mundo">
+                <figcaption>Figura 3: Um dos maiores jogadores de xadrez do mundo em uma partida oficial.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="chess.js"></script> 
+    <script src="../../../../auth.js"></script>
+
+</body>
+</html>

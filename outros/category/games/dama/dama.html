@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Jogo de Damas</title>
+    <link rel="stylesheet" href="dama.css"> <!-- Ajuste o caminho conforme necessário -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o logo, navegação e login/status de usuário -->
+    <header>
+        <div class="header-container">
+            <img src="../../../../logo.png" alt="Logo" class="logo">
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a id="inicioLink" href="#">Início</a></li>
+                    <li><a id="contatoLink" href="#">Entre em Contato</a></li>
+                    <li><a id="categoriaLink" href="#">Categoria</a></li>
+                    <li><a id="quemSomosLink" href="#">Quem Somos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Área de login e status do usuário -->
+            <div id="loginStatus">
+                <span id="usernameDisplay" class="user-name" onclick="toggleMenu()">Usuário</span>
+                <a href="../login/login.html" id="loginButton" style="display: none;">Fazer login</a>
+                <div id="userMenu" class="dropdown-menu">
+                    <a href="#" id="editAccount">Editar Conta</a>
+                    <a href="#" id="logoutButton">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Regras do Jogo de Damas</h1>
+        <p>Damas é um jogo estratégico de tabuleiro entre dois jogadores, em que o objetivo é capturar todas as peças do oponente ou bloquear seus movimentos. Abaixo estão as regras e movimentos do jogo de Damas.</p>
+
+        <!-- Tabuleiro Completo -->
+        <section>
+            <h2>O Tabuleiro</h2>
+            <p>O tabuleiro de Damas é composto por 64 casas alternadas entre cores claras e escuras. Cada jogador começa com 12 peças, dispostas nas casas escuras das três fileiras iniciais de cada lado do tabuleiro.</p>
+            <figure>
+                <img src="image1.png" alt="Tabuleiro completo de damas">
+                <figcaption>Figura 1: Tabuleiro de Damas e a posição inicial das peças.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Movimentos das Peças -->
+        <section>
+            <h2>Movimento das Peças</h2>
+            <p>As peças de Damas se movem apenas nas diagonais das casas escuras e, em sua forma básica, movem-se uma casa por vez. No entanto, podem capturar as peças adversárias ao pular sobre elas.</p>
+
+            <figure>
+                <img src="image2.png" alt="Peças de damas e seus movimentos">
+                <figcaption>Figura 2: As peças de Damas e seus movimentos característicos.</figcaption>
+            </figure>
+
+            <ul>
+                <li><strong>Peça comum:</strong> Move-se uma casa diagonal para frente. Pode capturar uma peça adversária ao pular sobre ela e ocupar a casa logo após.</li>
+                <li><strong>Dama:</strong> Após chegar à última fileira do lado adversário, a peça se torna uma "dama". A dama pode se mover tanto para frente quanto para trás nas diagonais, cobrindo várias casas ao longo do caminho.</li>
+            </ul>
+        </section>
+
+        <!-- Objetivo do Jogo -->
+        <section>
+            <h2>Objetivo do Jogo</h2>
+            <p>O objetivo do jogo de Damas é capturar todas as peças do oponente ou bloquear seus movimentos, impedindo que ele faça qualquer jogada válida. A vitória é alcançada quando o adversário fica sem peças ou sem movimentos.</p>
+            <p>Além disso, o jogo pode terminar em empate se ambos os jogadores concordarem que não é possível realizar mais capturas.</p>
+        </section>
+
+        <!-- Jogadores Famosos de Damas -->
+        <section>
+            <h2>Jogadores Famosos de Damas</h2>
+            <p>Embora o jogo de Damas seja amplamente popular ao redor do mundo, existem mestres reconhecidos que se destacam em competições internacionais, levando a prática do jogo ao mais alto nível de habilidade e estratégia.</p>
+
+            <figure>
+                <img src="image3.png" alt="Melhor jogador de damas do mundo">
+                <figcaption>Figura 3: Um dos maiores jogadores de Damas do mundo durante uma partida oficial.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="dama.js"></script> 
+    <script src="../../../../auth.js"></script>
+
+</body>
+</html>

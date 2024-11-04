@@ -1,0 +1,144 @@
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    line-height: 1.6; /* Aumenta o espaço entre linhas para melhor legibilidade */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #007bff; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento */
+    position: fixed; /* Mantém o cabeçalho fixo no topo */
+    width: 100%; /* Largura total */
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Contêiner do cabeçalho */
+.header-container {
+    display: flex; /* Usar flexbox para layout */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaça o conteúdo entre as extremidades */
+    max-width: 1200px; /* Largura máxima do cabeçalho */
+    margin: 0 auto; /* Centraliza o cabeçalho */
+}
+
+/* Estilo para o logo */
+.logo {
+    width: 50px; /* Largura do logo */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Estilos da lista de navegação */
+.nav-list {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão */
+    margin: 0; /* Remove margin padrão */
+    display: flex; /* Exibe os itens da lista em linha */
+}
+
+/* Estilo para os itens da lista de navegação */
+.nav-list li {
+    margin: 0 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para links da navegação */
+.nav-list a {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor dos links */
+    font-weight: bold; /* Destaca o texto dos links */
+    transition: color 0.3s; /* Efeito de transição na mudança de cor */
+}
+
+.nav-list a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilo para o status de login */
+#loginStatus {
+    display: flex; /* Usar flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+/* Estilo para links no status de login */
+#loginButton {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do link */
+    margin-left: 20px; /* Espaçamento à esquerda */
+    transition: color 0.3s; /* Efeito de transição na mudança de cor */
+}
+
+#loginButton:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilo para o menu suspenso */
+#userMenu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none; /* Oculta o menu suspenso inicialmente */
+    position: absolute;
+    top: 100%; /* Coloca o menu abaixo do botão */
+    right: 0; /* Alinha à direita do botão */
+    background-color: #f4f4f4; /* Cor de fundo do menu */
+    border: 1px solid #ddd; /* Borda do menu */
+    border-radius: 4px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do menu */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    min-width: 150px; /* Largura mínima do menu */
+    max-width: 250px; /* Limita a largura máxima do menu */
+    overflow: hidden; /* Evita que o conteúdo saia da borda */
+}
+
+/* Estilo para os itens do menu */
+.dropdown-menu a {
+    display: block;
+    color: #666; /* Cor dos itens do menu */
+    text-decoration: none;
+    padding: 8px 10px; /* Espaçamento interno dos itens */
+    transition: background-color 0.3s; /* Efeito de transição na mudança de cor */
+}
+
+.dropdown-menu a:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos do main */
+main {
+    padding: 70px 20px 20px; /* Adiciona espaçamento interno, considerando o cabeçalho fixo */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos dos parágrafos */
+main p {
+    max-width: 800px; /* Largura máxima dos parágrafos */
+    margin: 0px auto; /* Centraliza o parágrafo */
+    font-size: 1.1em; /* Aumenta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Aumenta o espaço entre linhas para melhor legibilidade */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 15px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor do parágrafo */
+}
+
+.flex-container {
+    display: flex; /* Usa flexbox para o layout */
+    align-items: flex-start; /* Alinha os itens no topo */
+    margin: 20px auto; /* Centraliza o contêiner */
+    max-width: 800px; /* Limita a largura máxima do contêiner */
+}
+
+
+.text-container {
+    max-width: 300px; /* Define uma largura máxima para o texto */
+}

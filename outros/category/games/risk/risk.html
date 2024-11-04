@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Jogo de Risk</title>
+    <link rel="stylesheet" href="risk.css"> <!-- Ajuste o caminho conforme necessário -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o logo, navegação e login/status de usuário -->
+    <header>
+        <div class="header-container">
+            <img src="../../../../logo.png" alt="Logo" class="logo">
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a id="inicioLink" href="#">Início</a></li>
+                    <li><a id="contatoLink" href="#">Entre em Contato</a></li>
+                    <li><a id="categoriaLink" href="#">Categoria</a></li>
+                    <li><a id="quemSomosLink" href="#">Quem Somos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Área de login e status do usuário -->
+            <div id="loginStatus">
+                <span id="usernameDisplay" class="user-name" onclick="toggleMenu()">Usuário</span>
+                <a href="../login/login.html" id="loginButton" style="display: none;">Fazer login</a>
+                <div id="userMenu" class="dropdown-menu">
+                    <a href="#" id="editAccount">Editar Conta</a>
+                    <a href="#" id="logoutButton">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Regras do Jogo de Risk</h1>
+        <p>Risk é um jogo de estratégia em que os jogadores assumem o controle de exércitos para conquistar territórios no tabuleiro. O objetivo é dominar o mundo através de batalhas e alianças. Abaixo estão as regras e movimentos do jogo de Risk.</p>
+
+        <!-- Tabuleiro Completo -->
+        <section>
+            <h2>O Tabuleiro</h2>
+            <p>O tabuleiro de Risk é dividido em territórios e continentes, que os jogadores devem conquistar para ganhar pontos e avançar no jogo.</p>
+            <figure>
+                <img src="image1.png" alt="Tabuleiro completo de Risk">
+                <figcaption>Figura 1: Tabuleiro de Risk e a disposição dos territórios.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Movimentos e Combates -->
+        <section>
+            <h2>Movimentos e Combates</h2>
+            <p>No início do jogo, os jogadores posicionam seus exércitos nos territórios. Em cada turno, um jogador pode atacar territórios adjacentes usando dados para resolver os combates.</p>
+
+            <figure>
+                <img src="image2.png" alt="Movimentos e combates em Risk">
+                <figcaption>Figura 2: Como os movimentos e combates são realizados no jogo de Risk.</figcaption>
+            </figure>
+
+            <ul>
+                <li><strong>Posicionamento de Exércitos:</strong> Os jogadores colocam seus exércitos em territórios de sua escolha, com o objetivo de fortalecer sua posição no tabuleiro.</li>
+                <li><strong>Combate:</strong> Ao atacar, o jogador rola até três dados contra o defensor, que pode rolar até dois dados. O resultado determina o número de exércitos perdidos.</li>
+            </ul>
+        </section>
+
+        <!-- Objetivo do Jogo -->
+        <section>
+            <h2>Objetivo do Jogo</h2>
+            <p>O objetivo do jogo de Risk é conquistar territórios suficientes para completar os objetivos secretos ou eliminar todos os adversários. O jogo pode ser jogado em diferentes modos, dependendo do número de jogadores e das regras escolhidas.</p>
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="risk.js"></script> 
+    <script src="../../../../auth.js"></script>
+
+</body>
+</html>

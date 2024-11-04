@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SITE ESCOLA - Aprendendo a Jogar</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- Cabeçalho com o logo, navegação e login/status de usuário -->
+        <header>
+            <div class="header-container">
+                <img src="logo.png" alt="Logo" class="logo">
+
+                <!-- Menu de navegação -->
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#" id="inicioLink">Início</a></li>
+                        <li><a href="#" id="contatoLink">Entre em Contato</a></li>
+                        <li><a href="#" id="categoriaLink">Categoria</a></li>
+                        <li><a href="#" id="quemSomosLink">Quem Somos</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Área de login e status do usuário -->
+                <div id="loginStatus">
+                    <a href="login/login.html" id="loginButton">Fazer login</a> <!-- Link para a página de login -->
+                    <div id="userMenu" style="display: none;"> <!-- Menu suspenso -->
+                        <span id="usernameDisplay">Usuário</span>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <a href="#" id="editAccount">Editar Conta</a>
+                            <a href="#" id="logout">Sair</a>
+                            <a href="#" id="editContent" style="display: none;">Editar Conteúdo do Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main>
+            <div class="main-content">
+                <h1>Descubra um mundo de possibilidades!</h1>
+                <p>Você já se perguntou como os jogos podem mudar sua forma de pensar e aprender? Este site é um projeto escolar desenvolvido por Pedro Henrique Rios Carvalho de Barros e Vivian Maria Fernandes Schettini. Somos da sala 2M8 e temos o prazer de compartilhar nosso conhecimento sobre jogos.</p>
+                <p>Acreditamos que os jogos têm o poder de ensinar e entreter, e este projeto representa nosso empenho em compartilhar o amor pelos jogos e seu aprendizado. Criamos este site com o intuito de fortalecer nossa criatividade e expandir nosso aprendizado, criando novos desafios, pois nosso sonho é nos tornarmos programadores.</p>
+                <p>Ao longo das páginas deste site, você encontrará as regras de diversos jogos, e nossa intenção é que, ao explorá-las, você descubra uma nova forma de entretenimento que também enriquece suas habilidades.</p>
+                <p>Portanto, prepare-se para embarcar nessa jornada de conhecimento e diversão! Lembre-se: cada desafio é uma oportunidade de crescimento, e cada jogo é uma chance de se tornar uma versão melhor de si mesmo. O que você está esperando para jogar?</p>
+            </div>
+        </main>
+        
+        <!-- JavaScript -->
+        <script src="index.js"></script>
+    </body>
+    </html>

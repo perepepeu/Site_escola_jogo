@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Jogo de Monopoly</title>
+    <link rel="stylesheet" href="monopoly.css"> <!-- Ajuste o caminho conforme necessário -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o logo, navegação e login/status de usuário -->
+    <header>
+        <div class="header-container">
+            <img src="../../../../logo.png" alt="Logo" class="logo">
+
+            <!-- Menu de navegação -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a id="inicioLink" href="#">Início</a></li>
+                    <li><a id="contatoLink" href="#">Entre em Contato</a></li>
+                    <li><a id="categoriaLink" href="#">Categoria</a></li>
+                    <li><a id="quemSomosLink" href="#">Quem Somos</a></li>
+                </ul>
+            </nav>
+
+            <!-- Área de login e status do usuário -->
+            <div id="loginStatus">
+                <span id="usernameDisplay" class="user-name" onclick="toggleMenu()">Usuário</span>
+                <a href="../login/login.html" id="loginButton" style="display: none;">Fazer login</a>
+                <div id="userMenu" class="dropdown-menu">
+                    <a href="#" id="editAccount">Editar Conta</a>
+                    <a href="#" id="logoutButton">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Regras do Jogo de Monopoly</h1>
+        <p>Monopoly é um jogo de tabuleiro clássico que simula a compra, venda e troca de propriedades, com o objetivo de dominar o mercado e levar os adversários à falência. Abaixo estão as regras e os principais aspectos do jogo.</p>
+
+        <!-- Tabuleiro Completo -->
+        <section>
+            <h2>O Tabuleiro</h2>
+            <p>O tabuleiro de Monopoly é composto por 40 espaços, incluindo propriedades, ferrovias, empresas de serviços públicos, espaços de sorte e azar, e o espaço de prisão. Os jogadores começam em "Partida" e se movem de acordo com o resultado dos dados.</p>
+            <figure>
+                <img src="image1.png" alt="Tabuleiro completo de Monopoly">
+                <figcaption>Figura 1: Tabuleiro de Monopoly e a posição inicial dos jogadores.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Movimentos e Ações -->
+        <section>
+            <h2>Movimentos e Ações</h2>
+            <p>Os jogadores lançam dois dados e movem suas peças pelo número de casas indicado. Ao cair em uma propriedade, o jogador pode comprá-la, pagar aluguel ou desenvolver casas.</p>
+
+            <figure>
+                <img src="image2.png" alt="Movimentos e ações no jogo de Monopoly">
+                <figcaption>Figura 2: A mecânica de movimento e ações no jogo de Monopoly.</figcaption>
+            </figure>
+
+            <ul>
+                <li><strong>Compra de Propriedades:</strong> Ao cair em uma propriedade que não foi comprada, o jogador pode adquiri-la pelo preço indicado. Caso contrário, o jogador deve pagar aluguel ao proprietário.</li>
+                <li><strong>Construção:</strong> O jogador pode construir casas em suas propriedades após comprar todas as propriedades de um mesmo grupo de cores.</li>
+            </ul>
+        </section>
+
+        <!-- Objetivo do Jogo -->
+        <section>
+            <h2>Objetivo do Jogo</h2>
+            <p>O objetivo do jogo de Monopoly é se tornar o jogador mais rico e levar os outros jogadores à falência. Os jogadores devem gerenciar suas finanças, fazer investimentos estratégicos e negociar com outros jogadores para maximizar seus lucros.</p>
+            <p>O jogo termina quando todos, exceto um jogador, vão à falência. O último jogador remanescente é declarado o vencedor.</p>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="monopoly.js"></script> 
+    <script src="../../../../auth.js"></script>
+
+</body>
+</html>
